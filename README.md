@@ -1,5 +1,5 @@
 # Snippr
- A faithful open-source revival of Flickr, circa late June-early July of 2004.
+ A faithful open-source revival of Flickr, circa September of 2004.
  
  # Requirements
  * A brain
@@ -12,7 +12,6 @@
  2. Create a new database and import the database file "db.sql"
  3. Rename config.sample.php (in /incl/) to config.php
  4. Modify the values on the file to match your desired branding settings and matching database credentials
- 5. Create the following directories on the root: "/buddyicons/" and "/uploads/"
  
  # Contributing
  * If it's a new feature or improvement, please look at Flickr archives on Web Archive and/or other reference material, as this wants to be as faithful as possible.
