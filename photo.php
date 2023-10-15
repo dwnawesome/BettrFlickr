@@ -83,7 +83,7 @@ if ($add_view) {
 							<table cellspacing="0" cellpadding="0" style="margin-top:0px;">
 								<tr>
 									<td valign="top" style="padding:0px;">
-										<div id="photoImgDiv<?php echo $_GET["id"]; ?>"><img src="/photos/<?php echo $_GET["id"]; ?>.jpg"></div>							
+										<div id="photoImgDiv<?php echo $_GET["id"]; ?>"><img src="/uploads/<?php echo $_GET["id"]; ?>.jpg"></div>							
 									</td>
 									
 									<td valign="top" style="padding-left: 20px; padding-top: 0px;">

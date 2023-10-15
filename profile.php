@@ -65,7 +65,7 @@ $Now = new DateTime($user->last_login);
 			$stmt->execute();
 			if($stmt->rowCount() > 0) {
 				foreach($stmt->fetchAll(PDO::FETCH_OBJ) as $photo) {
-					echo "<div class=\"ToDoProfile\" style=\"text-align: center;\"><a href=\"/gallery_view.php?id=" . $_GET["id"] . "\"><img src=\"/photos/". $photo->id . ".t.jpg\" alt=\"Click to view gallery\" style=\"margin-bottom:10px; border: solid 1px #000000\"><br /><strong>View Gallery</strong></a></div>";
+					echo "<div class=\"ToDoProfile\" style=\"text-align: center;\"><a href=\"/gallery_view.php?id=" . $_GET["id"] . "\"><img src=\"/uploads/". $photo->id . ".t.jpg\" alt=\"Click to view gallery\" style=\"margin-bottom:10px; border: solid 1px #000000\"><br /><strong>View Gallery</strong></a></div>";
 				}
 			}
 			echo "<h3 style=\"margin-top: 30px;\">Testimonials </h3>";

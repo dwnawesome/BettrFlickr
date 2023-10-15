@@ -67,7 +67,7 @@ function EditDesc(){
 						$comment_display = $comment_count . " Comments";
 					}
 					echo "				<p class=\"StreamList\">
-					<a href=\"/photo.php?id=" . $photo->id . "\"><img src=\"/photos/". $photo->id . ".t.jpg\" alt=\"". $photo->title  . "\" /></a>";
+					<a href=\"/photo.php?id=" . $photo->id . "\"><img src=\"/uploads/". $photo->id . ".t.jpg\" alt=\"". $photo->title  . "\" /></a>";
 					if(isset($photo->description)) {
 						echo "<br \>" . htmlspecialchars($photo->description);
 					}

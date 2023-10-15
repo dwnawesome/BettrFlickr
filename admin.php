@@ -55,18 +55,18 @@ if(isset($_POST["term"])) {
 		$stmt->bindParam(':t0', $_POST["term_id"]);
 		$stmt->execute();
 		
-		unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".jpg");
-		unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".t.jpg");
-		unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".m.jpg");
+		unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".jpg");
+		unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".t.jpg");
+		unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".m.jpg");
 		
-		if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".full.jpg")) {
-			unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".full.jpg");
-		} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".full.png")) {
-			unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".full.png");
-		} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".full.bmp")) {
-			unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".full.bmp");
-		} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".full.tga")) {
-			unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $photo->id . ".full.tga");
+		if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".full.jpg")) {
+			unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".full.jpg");
+		} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".full.png")) {
+			unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".full.png");
+		} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".full.bmp")) {
+			unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".full.bmp");
+		} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".full.tga")) {
+			unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $photo->id . ".full.tga");
 		}
 	}
 	echo "User banned";
@@ -84,14 +84,14 @@ if(isset($_POST["delete_photo"])) {
 	$stmt->bindParam(':t0', $_POST["photo_id"]);
 	$stmt->execute();
 
-	if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $_POST["photo_id"] . ".full.jpg")) {
-		unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $_POST["photo_id"] . ".full.jpg");
-	} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $_POST["photo_id"] . ".full.png")) {
-		unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $_POST["photo_id"] . ".full.png");
-	} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $_POST["photo_id"] . ".full.bmp")) {
-		unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $_POST["photo_id"] . ".full.bmp");
-	} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $_POST["photo_id"] . ".full.tga")) {
-		unlink($_SERVER["DOCUMENT_ROOT"] . "/photos/" . $_POST["photo_id"] . ".full.tga");
+	if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $_POST["photo_id"] . ".full.jpg")) {
+		unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $_POST["photo_id"] . ".full.jpg");
+	} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $_POST["photo_id"] . ".full.png")) {
+		unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $_POST["photo_id"] . ".full.png");
+	} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $_POST["photo_id"] . ".full.bmp")) {
+		unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $_POST["photo_id"] . ".full.bmp");
+	} else if(file_exists($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $_POST["photo_id"] . ".full.tga")) {
+		unlink($_SERVER["DOCUMENT_ROOT"] . "/uploads/" . $_POST["photo_id"] . ".full.tga");
 	}
 	
 	echo "Photo deleted";

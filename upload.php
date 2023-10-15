@@ -17,7 +17,7 @@ if(isset($_POST["Submit"])) {
 	// ----------------------------------------------------------------------
 	$upload_extension   =  strtolower(pathinfo($_FILES["file"]["name"], PATHINFO_EXTENSION));
 	$photo_id 			= getNextIDNew("photos");
-	$upload_tgt_preload = "photos/$photo_id.full.$upload_extension";
+	$upload_tgt_preload = "uploads/$photo_id.full.$upload_extension";
 	$input 				= $upload_tgt_preload;
 	$name      			= $_FILES['file']['name']; 
 	$temp_name  		= $_FILES['file']['tmp_name'];
@@ -56,9 +56,9 @@ if(isset($_POST["Submit"])) {
 	}
 
 	$gdimage = imgExifOrient($gdimage, $upload_tgt_preload);
-	imgProcess($gdimage, 100, 75, "photos/$photo_id.t.jpg");
-	imgProcess($gdimage, 240, 180, "photos/$photo_id.m.jpg");
-	imagejpeg(imagescale($gdimage, 500), "photos/$photo_id.jpg");
+	imgProcess($gdimage, 100, 75, "uploads/$photo_id.t.jpg");
+	imgProcess($gdimage, 240, 180, "uploads/$photo_id.m.jpg");
+	imagejpeg(imagescale($gdimage, 500), "uploads/$photo_id.jpg");
 
 	$stmt = $conn->prepare("INSERT INTO photos (title, description, tags, camera, uploaded_by) VALUES (:title, :description, :tags, :camera, :uploaded_by)");
 	$stmt->bindParam(":title", $title);
@@ -67,7 +67,7 @@ if(isset($_POST["Submit"])) {
 	$stmt->bindParam(":camera", $camera);
 	$stmt->bindParam(":uploaded_by", $user_id);
 	$stmt->execute();
-	header("Location: /photos.php");
+	header("Location: /photos/");
 }
 
 ?>

@@ -1,4 +1,23 @@
 <?php
+if (!is_dir("buddyicons")) {
+    if (mkdir("buddyicons", 740)) {
+    } else {
+        echo "Failed to create buddyicons folder.";
+    }
+}
+
+if (is_dir("photos")) {
+    if (rename("photos", "uploads")) {
+    } else {
+        echo "Failed to rename 'photos' folder to 'uploads'.";
+    }
+} elseif (!is_dir("uploads")) {
+    if (mkdir("uploads", 0740)) {
+    } else {
+        echo "Failed to create 'uploads' folder.";
+    }
+}
+
 
 function imgClone($img) {
     return imagecrop($img, array('x'=>0,'y'=>0,'width'=>imagesx($img),'height'=>imagesy($img)));

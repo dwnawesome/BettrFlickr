@@ -9,6 +9,13 @@ if(isset($_SESSION["id"])) {
 	$_SESSION["id"] = NULL;
 }
 
+if(isset($_SESSION["id"])) { 
+	$stmt = $conn->prepare("SELECT * FROM users WHERE id=:t0");
+	$stmt->bindParam(':t0', $user_id);
+	$stmt->execute();
+	foreach($stmt->fetchAll(PDO::FETCH_OBJ) as $account);
+	}
+
 if($website["maintenance"] == true) {
 	die(require_once($_SERVER["DOCUMENT_ROOT"] . "/maintenance.php"));
 }
@@ -19,7 +26,7 @@ if($website["maintenance"] == true) {
 <head>
 	<title><?php echo $title; ?></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="/css/flickr.css?version=1.195" rel="stylesheet" type="text/css">
+	<link href="/css/flickr.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" type="image/ico" href="<?php echo $website["favicon"]; ?>" />
 </head>
 <body onload="if (self.location.href != top.location.href) top.location.href = self.location.href;">
@@ -78,33 +85,38 @@ function openGame(extra) {
 </script>
 
 
-<div id="Main">
-	<table width="100%" border="0" cellpadding="0" cellspacing="0">
-		<tr>
-			<td class="topnavi">
-			<?php if(!isset($_SESSION["email"])) {
-				echo "				| <a href=\"/\">Home</a> 
-				| <a href=\"/photos.php\">Recent Photos</a> 
-				| <a href=\"/learn_more.php\">Learn More</a> 
-				| <a href=\"/register.php\">Register</a> 
-				| <a href=\"/login.php\">Log In</a> 
-				| <a href=\"/help.php\">Help</a> |";
-			} else {
-				echo "				| <a href=\"/\">Home</a> 
-				| <a href=\"/photos.php\">Photos</a> 
-				| <a href=\"/groups.php\">Groups</a> 
-				| <a href=\"/mail.php\">" . $website["instance_name"] . " Mail</a> 
-				| <a href=\"/invite.php\">Invite</a> 
-				| <a href=\"/contacts.php\">Contacts</a>
-				| <a href=\"/find_people.php\">Find People</a>
-				| <a href=\"/help.php\">Help</a>
-				| <a href=\"/logout.php\">Log Out</a> |";
+<div id="Main">	
+	<table width="100%" cellpadding="0" cellspacing="0" align="center">
+	<tbody><tr>
+		<td class="topnavi">
+				<b><a href="/">Home</a>	| 
+				<?php if(!isset($_SESSION["email"])) { ?>
+				<a href="/photos/">Recent Photos</a> 
+				| <a href="/learn_more.gne">Learn More</a> 
+				| <a href="/register.gne">Create a Free Account</a></b>
+			<?php } else { ?> 
+			</b>Photos: <b><a href="/photos/">Everyone's</a> •  <a href="/tags/">Tags</a> • <a href="#">Contacts'</a> • <a href="#">Yours</a></b> | <a href="#">Groups</a> | <a href="#">People</a> | <a href="#">Invite</a>
+				<?php
 			}
 			?>
-			</td>
-			<td align="right">
-				<a href="/"><img src="<?php echo $website["instance_logo"]; ?>" alt="<?php echo $website["instance_name"]; ?> Logo: click to get home" width="106" height="35" style="border: none;"></a>
-			</td>
-		</tr>
-	</table>
-	
+		
+		</td>
+		<td>
+			<a href="/"><img src="<?php echo $website["instance_logo"]; ?>" alt="<?php echo $website["instance_name"]; ?> Logo: click to get home" width="106" height="35" style="border: none; float: right;"></a>
+		</td>	
+	</tr>
+	<tr>
+		<td colspan="2" align="right" style="padding: 0px;">
+			<p class="Loggy" style="margin-right: 20px;">
+			<?php if(isset($_SESSION["id"])) { ?>
+			Logged in as <b><a href="profile.php?id=<?php echo $user_id; ?>"><?php echo $account->screen_name; ?></a></b> | <a href="/logout.php">Log Out</a> | <a href="/help.php">Help</a>
+			<?php } else { ?>
+				<a href="/login.gne">Log In</a> 
+				| <a href="/help.gne">Help</a> 
+			<?php } ?>
+			</p>	
+		
+		
+		</td>
+	</tr>
+</tbody></table>

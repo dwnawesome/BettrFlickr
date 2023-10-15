@@ -33,12 +33,12 @@ $tag_list = array_slice(array_count_values($tag_list), 0, 150);
 								if($frequency >= 36) {
 									$frequency = 36;
 								}
-								echo "&nbsp;<a href=\"/photos/tags/" . htmlspecialchars($tag) . "/\" style=\"font-size: " . $frequency . "px;\" class=\"PopularTag\">". htmlspecialchars($tag) . "</a>&nbsp;
+								echo "&nbsp;<a href=\"/uploads/tags/" . htmlspecialchars($tag) . "/\" style=\"font-size: " . $frequency . "px;\" class=\"PopularTag\">". htmlspecialchars($tag) . "</a>&nbsp;
 								";
 							} ?>
 							
 							</p>
-							<p style="margin-top: 20px;">(You can <a href="/photos/alltags/">see the list of all the tags here</a>.)</p>
+							<p style="margin-top: 20px;">(You can <a href="/uploads/alltags/">see the list of all the tags here</a>.)</p>
 
 
 							<form action="/photos/tags/" method="get">

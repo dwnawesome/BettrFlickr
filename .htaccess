@@ -1,3 +1,8 @@
 RewriteEngine on
 
 ErrorDocument 404 /404.php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)\.gne$ $1.php [NC,L]
+RewriteRule ^photos/$ photos.php [L]

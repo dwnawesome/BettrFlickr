@@ -66,7 +66,7 @@ if($_GET["raw"] == 0) {
 	$stmt->bindParam(':t0', $_GET['nsid']);
 	$stmt->execute();
 	foreach($stmt->fetchAll(PDO::FETCH_OBJ) as $photo) {
-		echo "document.write('		<tr align=\"center\"><td style=\"'+flickr__fnt+'\"><a href=\"" . $url . "/photo.php?id=" . $photo->id . "\"><img src=\"" . $url . "/photos/" . $photo->id . "." . $size . ".jpg\" style=\"'+flickr__bdr+'\" /></a></td></tr>');
+		echo "document.write('		<tr align=\"center\"><td style=\"'+flickr__fnt+'\"><a href=\"" . $url . "/photo.php?id=" . $photo->id . "\"><img src=\"" . $url . "/uploads/" . $photo->id . "." . $size . ".jpg\" style=\"'+flickr__bdr+'\" /></a></td></tr>');
 		";
 	}
 	if($_GET["name"] == 1) {
@@ -84,7 +84,7 @@ if($_GET["raw"] == 0) {
 		$stmt->execute();
 		foreach($stmt->fetchAll(PDO::FETCH_OBJ) as $photo) {
 			$photocount++;
-			echo "document.write('<a href=\"" . $url . "/photo.php?id=" . $photo->id . "\"><img src=\"" . $url . "/photos/" . $photo->id . "." . $size . ".jpg\" class=\"flickrimg\" id=\"flickrimg" . $photocount . "\" /></a>');";
+			echo "document.write('<a href=\"" . $url . "/photo.php?id=" . $photo->id . "\"><img src=\"" . $url . "/uploads/" . $photo->id . "." . $size . ".jpg\" class=\"flickrimg\" id=\"flickrimg" . $photocount . "\" /></a>');";
 		}
 }
 ?>
