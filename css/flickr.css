@@ -1,0 +1,1671 @@
+
+a.iconlink, span.icontext, a.iconlink:visited {
+	color: #000000;
+	font-size: 16px;
+	text-decoration: none;
+	background: none;
+}
+a.iconlink:hover {
+	color: #000000;
+	text-decoration: underline;
+	background: none;
+}
+
+
+.Launch {
+}
+
+.TopStart {
+	float:right;
+	text-align: right;
+	top: 0px;
+	right: 0px;
+	position: relative;
+}
+
+.TopStart p {
+	margin-top: 0px;
+	margin-bottom: 4px;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+body {
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+a:link {
+	color: #0063DC;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #0259C4;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #0063DC;
+}
+
+a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #0259C4;
+}
+
+p {
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font: normal 32px Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin-top: 0px;
+}
+
+.RealName {
+	font-size: 75%;
+	color: #333333;
+}
+
+h2 {
+	font: lighter 26px Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+
+h3 {
+	font-size: 20px;
+	color: #FF0084;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+h4 {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	color: #000;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+h5 {
+	font: bold 13px Arial, Helvetica, sans-serif;
+	margin-bottom: 5px;
+}
+
+h6 {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #666666;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+form {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+table {
+	border: none;
+	font-size: 11px;
+}
+
+td {
+	padding: 5px;
+	font: 12px Arial, Helvetica, sans-serif;
+} 
+
+img {
+	border: 1px solid #000000;
+}
+
+ol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+ul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+/* MAIN TEMPLATE BITS */
+
+
+#Main {
+	margin-right: auto;
+	margin-left: auto;
+	width: 760px;
+	text-align: left;
+	vertical-align: top;
+	padding: 10px;
+}
+
+
+.Ludi {
+	padding-top: 20px;
+	font: 11px Arial, Helvetica, sans-serif;
+}
+
+/* LEFT COLUMN */
+
+#Hint {
+	width: 160px;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-left: 0px;
+	margin-top: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	vertical-align: top;
+}
+
+#Hint p {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #333333;
+	margin-top: 5px;
+	padding-left: 4px;
+}
+
+#Hint h2 {
+	font: 14px Arial, Helvetica, sans-serif;
+	color: #111;
+	margin-bottom: 5px;
+}
+
+#Hint h3 {
+	font-size: 20px;
+	color: #FF0084;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+#Hint h4 {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #111;
+	margin-bottom: 5px;
+	margin-top: 15px;
+}
+
+#Hint h6 {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	color: #FF0084;
+}
+
+#Hint img {
+	border: 0px none;
+}
+
+/* RIGHT COLUMN */
+
+#GoodStuff {
+	width: 100%;
+	vertical-align: top;
+	margin-top: 0px;
+	text-align: left;
+	padding-top: 0px;
+}
+
+/* CONFIRMATIONS/ERRORS/FORM STUFF/BUTTONS */
+
+.Confirm {
+	font: bold 14px Arial, Helvetica, sans-serif;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	background: url(/images/icon_confirm.jpg) no-repeat left top;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	color: #000000;
+}
+
+.Problem {
+	font: bold 14px Arial, Helvetica, sans-serif;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	background: url(/images/icon_error.jpg) no-repeat left top;
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	color: #000000;
+}
+
+.NoResult {
+	font: bold 14px Arial, Helvetica, sans-serif;
+	padding-bottom: 10px;
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	color: #0063DC;
+}
+
+.Butt {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background: #0063DC;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #7CBAFF;
+	border-right-color: #2854A7;
+	border-bottom-color: #2854A7;
+	border-left-color: #7CBAFF;
+}
+
+.DeleteButt {
+	color: #000000;
+	background: #DCE0E6;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #F5F6F7;
+	border-right-color: #BFB7BC;
+	border-bottom-color: #BFB7BC;
+	border-left-color: #F5F6F7;
+	font: 11px Arial, Helvetica, sans-serif;
+}
+
+/* IMG CLASSES */
+
+.BuddyIcon,
+.xBuddyIcon {
+	margin-right: 30px;
+	border: 1px solid #000000;
+/*	float: left; */
+	margin-bottom: 5px;
+}
+
+.BuddyIconH,
+.xBuddyIconH {
+	margin-right: 20px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.BuddyIconTestimonial {
+	border: 1px solid #000000;
+	float: right;
+	margin: 3px;
+}
+
+.Focus {
+	padding: 10px;
+	text-align: left;
+	font-size: 13px;
+	color: #003366;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #f5f5f5;
+}
+
+.FormInstruction {
+	padding: 10px;
+	background: #f5f5f5;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+
+/* PROFILE PAGE SPECIFIC */
+
+#Relations {
+	float: right;
+	margin-top: 0px;
+	vertical-align: top;
+	width: 160px;
+	padding: 8px;
+	margin-left: 20px;
+	background-color: #EEF2FD;
+	font: 11px Arial, Helvetica, sans-serif;
+	margin-bottom: 20px;
+	border:	1px solid #D3DEFA;
+}
+
+.Label {
+	vertical-align: top;
+	text-align: right;
+	font-weight: bold;
+}
+
+#Testi {
+	padding: 5px;
+	border: 1px solid #E2E2E2;
+	background: #FFFFFF;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 90%;
+	margin-top: 2px;
+}
+
+#Testi img {
+	border: 1px solid #000;
+}
+
+/* GALLERY */
+
+#InBox table {
+	font: 12px Arial, Helvetica, sans-serif;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#InBox td {
+	border-bottom: 1px solid #E5E5E5;
+}
+
+#InBox h4 {
+	font: bold 14px Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+#InBox p {
+	margin-bottom: 10px;
+}
+
+#InBox .Head {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #fff;
+	background: #666
+}
+
+#InBox h4 {
+	font: 11px Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: #666666;
+}
+
+#InBox #Unread {
+	font-weight: bold;
+	background: #F0F0F0;
+}
+
+#InBox #Read {
+	font-weight: normal;
+}
+
+#InBox #Replied {
+	font-style: italic;
+	color: #333333;
+}
+
+.icon {
+	border: 0px none;
+	vertical-align: middle;
+	margin-right: 2px;
+}
+
+#InBoxDel {
+	font-size: 90%;
+	border-bottom: 1px solid #FF66CC;
+	background: #FFFFFF;
+	text-align: center;
+}
+
+.DateTime {
+	font: 11px/15px Arial, Helvetica;
+	color: #999999;
+}
+
+.PostDateTime {
+	font: 11px Arial, Helvetica;
+	color: #999999;
+	margin-top: 0px;
+}
+
+a.PostDateTime {
+	color: #999999;
+}
+
+.topnavi {
+	float: left;
+	margin-top: 10px;
+	font: bold 13px Arial, Helvetica, sans-serif;
+	color: #999999;
+}
+
+.New {
+	font: 8px Verdana, Arial, Helvetica, sans-serif;
+	color: #000000;
+	background: #FFE28A;
+	padding: 1px;
+}
+
+.DelTag:link {
+	color: #c9c9c9;
+	text-decoration: none;
+}
+
+.DelTag:visited {
+	color: #c9c9c9;
+	text-decoration: none;
+}
+
+.DelTag:hover {
+	color: #0063DC;
+	background: #fff;
+	text-decoration: none;
+}
+
+.DelTag:active {
+	color: #FF0084;
+	background: #fff
+	text-decoration: none;
+}
+
+.pale:link {
+	color: #666666;
+	text-decoration: none;
+}
+
+.pale:visited {
+	color: #999999;
+	text-decoration: none;
+}
+
+.pale:hover {
+	color: #FF0084;
+	background: #fff;
+	text-decoration: underline;
+}
+
+.pale:active {
+	color: #FF0084;
+	background: #fff
+	text-decoration: underline;
+}
+
+/* GROUP STUFF */
+
+#noteEdit {
+	display: none;
+}
+
+.noteText {
+	width: 80%;
+	height: 70px;
+	margin: 4px 0px 4px 0px;
+}
+
+.EditThisLeft,
+#Hint div.EditThisLeft {
+	width: 90%;
+	font: 11px Arial, Helvetica, sans-serif;
+	background-color: #EEF2FD;
+	padding: 4px;
+	border:	1px solid #D3DEFA;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.TagList {
+	background-color: #f6f6f6;
+	padding: 6px;
+	margin-top: 25px;
+	border:	1px solid #eee;
+	width: 130px;
+	vertical-align: left;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #666666;	
+}
+
+.TagList h4 {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.CategoryList {
+	background-color: #f6f6f6;
+	padding: 6px;
+	border:	1px solid #eee;
+	vertical-align: left;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #666666;	
+}
+
+.CategoryList h4 {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.FriendList {
+	font: 11px Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #CCCCCC;
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+
+.EventBuddy {
+	font: 11px Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.AdminList {
+	font: 11px Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #CCCCCC;
+	list-style-type: none;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.MemberList {
+	font: 11px Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #E1E1E1;
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.TopicReply {
+	margin-left: 73px;
+}
+
+.FindGroup {
+	padding: 5px 10px;
+	vertical-align: top;
+	margin-bottom: 5px;
+}
+
+.FindGroup h3 {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	border: none;
+}
+
+.FindGroup h4 {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	color: #999;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.Top {
+	font: 9px Verdana, Arial, Helvetica, sans-serif;
+	margin: 0px 0px 0px 20px;
+	float: right;
+}
+
+.OnlineNow {
+	font: 11px Arial, Helvetica, sans-serif;
+	text-align: center;
+	background-color: #FFE8F4;
+	vertical-align: top;
+	padding: 4px;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #FF0084;
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.OnlineNowAway {
+	font: 11px Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #FF0084;
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.OfflineList {
+	font: 11px Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid #E1E1E1;
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+.InFlickr {
+	font-weight: bold;
+	color: #FF0084;
+}
+
+.Away {
+	font-style: italic;
+	font-weight: normal;
+	color: #FF0084;
+}
+
+.LoggedIn {
+	font-style: italic;
+	font-weight: normal;
+	color: #F97DB8;
+}
+
+.NotLoggedIn {
+	font-style: italic;
+	font-weight: normal;
+	color: #666666;	
+}
+
+.Tease {
+	background-color: #eee;
+	border:	1px solid #d0d0d0;
+	vertical-align: left;
+	color: #000;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+
+.Tease td {
+	font: 11px Arial, Helvetica, sans-serif;
+	padding: 5px;
+}
+
+.Tease .Or {
+	font: 11px Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+.Tease .Member {
+	font: normal 11px Arial, Helvetica, sans-serif;
+	text-align: left;
+	margin-top: 0px;
+}
+
+
+.HomeBox {
+	width: 100%; 
+	background:#f3f3f3; 
+	border: dotted 1px #e6e6e6; 
+	margin-right: 0px;
+	margin-bottom: 15px;
+	padding: 6px;
+}
+
+.HomeBox .But {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #483100;
+}
+
+.StartAlert {
+	font: 11px Arial, Helvetica, sans-serif;
+	background-color: #FBFFCC;
+	border: 1px solid #F7FEA6;
+	text-align: left;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	padding: 6px;
+	width: 100%;
+}
+
+.StartAlert ul {
+	margin-top: 0px;
+	margin-bottom: 0px;	
+}
+
+.MakeBadge {
+	font: 11px Arial, Helvetica, sans-serif;
+	border: 1px solid #FFCC66;
+	text-align: left;
+	padding: 3px 6px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	background: #FEE28D;
+}
+
+.MakeBadge a:link {
+	color: #000;
+	text-decoration: underline;
+}
+
+.MakeBadge a:visited {
+	color: #000;
+	text-decoration: underline;
+}
+
+.MakeBadge a:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #000;
+}
+
+.MakeBadge a:active {
+	color: #fff;
+	text-decoration: underline;
+	background: #000;
+}
+
+
+/* ICON BUILDER */
+
+.CurrentIcon {
+	font: 12px Arial, Helvetica, sans-serif;
+	padding: 8px;
+	background-color: #EEF2FD;
+	margin-bottom: 5px;
+	border:	1px solid #D3DEFA;
+	vertical-align: middle;
+}
+
+.CurrentIcon img {
+	padding: 3px;
+	float: left;
+	border: none;
+}
+
+.IconReady {
+	padding: 6px;
+	border:	1px solid #eeeeee;
+	margin-top: 0px;
+}
+
+.IconReady p {
+	font: 11px Arial, Helvetica, sans-serif;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+
+/* Remove when done with Profile Overhaul */
+
+.ToDoProfile {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #000000;
+	border: 1px solid #FDD8EB;
+	padding: 6px;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	width: 90%;
+}
+
+#Feeds {
+	float: right;
+	font: 11px Arial, Helvetica, sans-serif;
+	background-color: #f5f5f5;
+	padding: 4px;
+	border:	1px solid #e1e1e1;
+	width: 200px;
+	vertical-align: middle;
+	color: #666666;
+	margin-right: -15px;
+	margin-bottom: -40px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#Feeds h4 {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+#Feeds p {
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #666666;
+	margin-top: 0px;
+}
+
+.PostPreview {
+	font: 12px Arial, Helvetica, sans-serif;
+	padding: 10px;
+	border:	1px solid #D3DEFA;
+	background-color: #EEF2FD;	
+	text-align: left;
+	vertical-align: middle;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.PostPreviewTitle {
+	font-size: 120%;
+	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.GroupAnnounce {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000000;
+	background-color: #FFE8F4;
+	border: 1px solid #FDD8EB;
+	text-align: center;
+	padding: 4px 2px;
+	width: 160px;
+	margin-bottom: 10px;
+}
+
+.Who {
+	vertical-align: middle;
+	margin-left:0px;
+	border: none;
+	padding-left: 2px;
+	margin-right: 0px;
+	padding-right: 0px;
+}
+
+.PostLinks:link {
+	color: #999999;
+}
+
+.PostLinks:visited {
+	color: #666666;
+}
+
+.PostLinks:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #0063DC;
+}
+
+.PostLinks:active {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #0259C4;
+}
+
+.PinkButt {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background: #FF0084;
+	border: 1px solid;
+	border-top-color: #7CBAFF;
+	border-right-color: #2854A7;
+	border-bottom-color: #2854A7;
+	border-left-color: #7CBAFF;
+}
+
+.SmallPinkButt {
+	font: bold 10px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #FF0084;
+	border: 1px solid;
+	border-top-color: #7CBAFF;
+	border-right-color: #2854A7;
+	border-bottom-color: #2854A7;
+	border-left-color: #7CBAFF;
+	padding: 0px;
+	margin: 0px;
+}
+
+.SmallButt {
+	font: bold 10px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #0063DC;
+	border: 1px solid;
+	border-top-color: #7CBAFF;
+	border-right-color: #2854A7;
+	border-bottom-color: #2854A7;
+	border-left-color: #7CBAFF;
+	padding: 0px;
+	margin: 0px;
+}
+
+.SmallDeleteButt {
+	text-transform: uppercase;
+	color: #000000;
+	background: #DCE0E6;
+	border: 1px solid;
+	border-top-color: #F5F6F7;
+	border-right-color: #BFB7BC;
+	border-bottom-color: #BFB7BC;
+	border-left-color: #F5F6F7;
+	font: 10px Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin: 0px;
+}
+
+.WhosOnline {
+	font: normal 12px Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-align: left;
+	list-style: none;
+	margin-left: 0px;
+	padding-left: 10px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	padding-top: 0px;
+}
+
+/* Used in inc_photos_friends, could be obsolete */
+.FriendPicList {
+	font: 11px Arial, Helvetica, sans-serif;
+	text-align: center;
+	vertical-align: text-bottom;
+	padding: 0px;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	width: 110px;
+	height: 130px;
+}
+
+.AccountStatus {
+	margin-top: 0px;
+	vertical-align: top;
+	width: 100%;
+	padding: 6px;
+	background-color: #f5f5f5;
+	font: 12px Arial, Helvetica, sans-serif;
+	margin-bottom: 20px;
+	border:	1px solid #CCCCCC;
+}
+
+.SetPrivacy {
+	border:	1px solid #CCCCCC;
+	background-color: #ffffff;
+	padding:3px;
+	width: 215px;
+	font: 11px Arial, Helvetica, sans-serif;
+	color: #000000;
+	margin-bottom: 10px;	
+}
+
+.SetPrivacy img {
+	border: none;
+}
+
+.SetPrivacy p {
+	margin-top:10px;
+}
+
+.ShowUsYerDate:link {
+	color: #555;
+	text-decoration: none;
+}
+
+.ShowUsYerDate:visited {
+	color: #555;
+	text-decoration: none;
+}
+
+.ShowUsYerDate:hover {
+	color: #FF0084;
+	text-decoration: none;
+	background: #fff;
+}
+
+.ShowUsYerDate:active {
+	color: #FF0084;
+	text-decoration: none;
+	background: #fff;
+}
+
+.37 {
+	background: #FBFFCC;
+	font-weight: bold;
+	padding: 2px;
+}
+
+.StreamList {
+	font: 11px Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	float: left; 
+	text-align: center;
+	width: 110px;
+	height: 130px;
+}
+
+.PoolList {
+	font: 11px Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin-right: 10px;
+	float: left; 
+	text-align: center;
+	width: 110px;
+	height: 120px;
+}
+
+.UserTagList {
+	padding: 0px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	float: left; 
+	width: 110px;
+	height: 110px;
+}
+
+.PoolList {
+	font: 11px Arial, Helvetica, sans-serif;
+	padding: 0px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	float: left; 
+	width: 110px;
+	height: 120px;
+}
+
+.StreamBuddy {
+	margin-right: 20px;
+	border: 1px solid #000000;
+	float: left;
+	margin-bottom: 20px;
+}
+.Temporal {
+	text-align: center;
+	vertical-align: middle;
+	padding: 5px;
+	font: 11px Arial, Helvetica, sans-serif;
+}
+
+.SmallBit {
+	margin-top: 0px;
+	font: 11px Arial, Helvetica, sans-serif;
+	color:#888888
+}
+
+.FindImage {
+	padding: 5px 10px;
+	vertical-align: top;
+	border:	1px solid #D3DEFA;
+/*	background-color: #EEF2FD;	*/
+}
+
+.FindImage h4 {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	color: #999;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.Skipper { 
+	margin-bottom: 0px;
+	margin-left: 56px;	
+}
+
+.Skipper td {
+	font: bold 14px Arial, Helvetica, sans-serif;
+}
+
+.SkipOff {
+	background: #eee;
+	color: #d0d0d0;
+}
+
+.np:link {
+	color: #aaa;
+	text-decoration: none;
+}
+
+.np:visited {
+	color: #aaa;
+	text-decoration: none;
+}
+
+.np:hover {
+	color: #FF0084;
+	text-decoration: none;
+	background: #fff;
+}
+
+.np:active {
+	color: #FF0084;
+	text-decoration: none;
+	background: #fff;
+}
+
+.BadgePhoto {
+	font: 12px Arial, Helvetica, sans-serif;
+	background-color: #EEF2FD;
+	padding: 4px;
+	margin: 0px 0px 10px 10px;
+	vertical-align: middle;
+	color: #666666;
+	border: 1px solid #D3DEFA;
+}
+
+/* EVENT STUFF
+
+#Event {
+	width: 100%;
+	background-color: #f6f6f6;
+	border: solid 1px #eee;	
+	vertical-align: middle;
+	text-align: left;	
+	margin-top: 0px;	
+}
+
+#Event td {
+	padding: 3px;
+	font: normal 12px Arial, Helvetica, sans-serif;	
+}
+
+#Event p {
+	font: normal 12px Arial, Helvetica, sans-serif;	
+}
+
+#Event .Name {
+	font: bold 12px Arial, Helvetica, sans-serif;
+	margin-bottom:6px;	
+}
+
+#Event .Date {
+	font: bold 11px Arial, Helvetica, sans-serif;
+	margin-bottom:4px;		
+}
+
+#Event .Group {
+	font: 11px Arial, Helvetica, sans-serif;
+	margin-top:3px;
+	color: #aaa;
+	padding-bottom: 8px;	
+}
+
+.Eventy:link {
+	color: #0063DC;
+	text-decoration: none;
+}
+
+.Eventy:visited {
+	color: #0063DC;
+	text-decoration: none;
+}
+
+.Eventy:hover {
+	color: #FF0084;
+	text-decoration: none;
+	background: #fff;
+}
+
+.Eventy:active {
+	color: #FF0084;
+	text-decoration: none;
+	background: #fff;
+}
+
+.ThisEvent {
+	width:100%; 
+	background:#EEF2FD; 
+	padding:10px; 
+	border-top: solid 1px #D3DEFA; 
+	border-bottom: solid 1px #D3DEFA;
+	margin-top:25px;		
+}
+
+.ThisEvent h3 {
+	margin-top:0px;
+}
+
+.Reminder {
+	width: 100%;
+	font: 11px Arial, Helvetica, sans-serif;
+	background-color: #FBFFCC;
+	border: 1px solid #F7FEA6;
+	padding: 6px;	
+	vertical-align: middle;
+	text-align: left;
+}
+
+.AllReminder {
+	width: 100%;
+	font: 11px Arial, Helvetica, sans-serif;
+	background-color: #f6f6f6;
+	border: 1px solid #eee;
+	padding: 6px;	
+	vertical-align: middle;
+	text-align: left;
+}
+
+*/
+
+.PhotosTease {
+	color: #000;
+	text-align: left;
+	padding: 6px;
+	margin-bottom: 10px;
+	background-color: #FFE8F4;
+	border: 1px solid #FDD8EB;
+	font-weight: bold;	
+	width: 90%;
+}
+
+.PhotosTease a:link {
+	color: #000;
+	text-decoration: underline;
+}
+
+.PhotosTease a:visited {
+	color: #000;
+	text-decoration: underline;
+}
+
+.PhotosTease a:hover {
+	color: #fff;
+	text-decoration: none;
+	background: #000;
+}
+
+.PhotosTease a:active {
+	color: #fff;
+	text-decoration: underline;
+	background: #000;
+}
+
+.BadUser {
+	color: #000;
+	text-align: left;
+	padding: 6px;
+	margin-bottom: 10px;
+	background-color: #eee;
+	border: 1px dotted #d0d0d0;
+	font-weight: bold;	
+}
+
+.BadUser a:link {
+	color: #f00;
+	text-decoration: underline;
+}
+
+.BadUser a:visited {
+	color: #f00;
+	text-decoration: underline;
+}
+
+.BadUser a:hover {
+	color: #f00;
+	text-decoration: none;
+	background: #000;
+}
+
+.BadUser a:active {
+	color: #f00;
+	text-decoration: underline;
+	background: #000;
+}	
+
+.SkipThis {
+	width: 100%;
+	background-color: #FBFFCC;
+	border: 1px solid #F7FEA6;
+	padding: 6px;	
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.SkipThis h2 {
+	margin: 0px;
+}
+
+.SkipThis p {	
+	font: 14px Arial, Helvetica, sans-serif;
+	margin: 0px;
+}
+
+.JoinUp {
+	width: 100%;
+	background-color: #FBFFCC;
+	border: 1px solid #F7FEA6;
+	padding: 6px;	
+	text-align: left;
+	margin-top: 15px;
+}
+
+.PopularTag:link {
+	margin-bottom: 10px;
+	text-decoration: none;
+	padding-bottom: 2px;	
+}
+
+.PopularTag:visited {
+	color: #0063DC;
+	text-decoration: none;	
+}
+
+.PopularTag:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background: #0063DC;	
+}
+
+.PopularTag:active {
+	color: #ffffff;
+	text-decoration: none;
+	background: #FF0084;
+}
+
+.PinkyWinky {
+	padding: 20px;
+	border: 1px solid #FFD9ED;	
+}
+
+.PinkyWinky p {
+	font: 14px Arial, Helvetica;
+}
+
+.Home td {
+	font: 14px Arial, Helvetica;
+	color: #000;
+}
+
+.Home img {
+	border: none;
+}
+
+.Editor img {
+	border: solid 1px #000;
+}
+
+.PostNew {
+	padding: 4px 4px;
+	background-color: #FFE8F4;
+	border: 1px solid #FDD8EB;
+	text-align: center;
+	margin: 5px 0px 10px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 160px;
+}
+
+.Offensive {
+	font: 11px Arial, Helvetica, sans-serif;
+	background-color: #f6f6f6; 
+	border:	1px solid #eee;
+	padding: 4px;
+	margin: 30px 0px 20px 10px;
+	width: 140px;
+	text-align: center;
+	vertical-align: middle;
+	color: #666666;
+}
+
+.ChangeList {
+	font: 11px Arial, Helvetica, sans-serif;
+	padding: 0px;
+/*	border: 1px solid #CCCCCC; */
+	margin-right: 5px;
+	margin-bottom: 5px;
+	float: left;
+	text-align: center;
+	width: 110px;
+	height: 110px;
+}
+
+.75 {
+	width: 90%; 
+	text-align: center; 
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.75a {
+	width: 290px;
+	padding-top: 10px; 	
+	padding-bottom: 0px; 	
+	margin-bottom: 0px; 	
+}
+
+.More {
+	width: 90%; 
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-bottom: 5px;
+	text-align: right;	
+}
+
+.Flotsam {
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-bottom: 10px;	
+	vertical-align: top;	
+}
+				
+.HitThis {
+	background-color: #EEF2FD;
+	padding: 4px;
+	width: 100%;
+	border:	1px dotted #D3DEFA;
+	vertical-align: middle;
+	color: #000;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.HitThis h3 {
+	margin-bottom: 0px;
+	margin-top: 0px;	
+}
+
+.HitThis p {
+	margin-top: 5px;
+	margin-left: 18px;	
+	margin-bottom: 0px;	
+	font-size: 12px;
+}
+
+.ToolTip {
+	background-color: #ffffcc;
+	color: #000000;
+	padding: 8px;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-bottom: 3px solid #000000;
+	border-right: 3px solid #000000;
+	position: absolute;
+	font: 12px Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+.BadUser {
+	color: #000;
+	text-align: left;
+	padding: 6px;
+	margin-bottom: 10px;
+	background-color: #eee;
+	border: 1px dotted #d0d0d0;
+	font-weight: bold;	
+}
+
+.BadUser a:link {
+	color: #f00;
+	text-decoration: underline;
+}
+
+.BadUser a:visited {
+	color: #f00;
+	text-decoration: underline;
+}
+
+.BadUser a:hover {
+	color: #f00;
+	text-decoration: none;
+	background: #000;
+}
+
+.BadUser a:active {
+	color: #f00;
+	text-decoration: underline;
+	background: #000;
+}
+
+.Day {
+	font: bold 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-align: left;
+	vertical-align: bottom;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 6px;
+	padding-left: 8px;
+}
+
+.EmptyDay {
+	padding: 0px;
+	font: bold 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #D2D2D2;
+	background: url(/images/calendar_bg.jpg) repeat-x;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 4px;
+	padding-top: 3px;
+	border: 1px solid #7E7262;
+}
+
+.FutureDay {
+	padding: 0px;
+	font: bold 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #e5e5e5;
+	background: url(/images/calendar_bg_2.jpg) repeat-x;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 4px;
+	padding-top: 3px;
+	border: 1px solid #e5e5e5;
+}
+
+.FullDay {
+	background: #FFFFFF;
+	text-align: left;
+	vertical-align: top;
+	border: 1px solid #7E7262;
+	padding: 3px;
+}
+
+.FullDay img {
+	border: 1px solid #000
+}
+
+.WhiteDate {
+	font: bold 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding-left: 4px;
+	padding-top: 0px;
+	z-index: 3;	
+	position: absolute;	
+	text-align: left;
+	vertical-align: top;
+}
+
+.BlackDate {
+	font: bold 18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000;
+	padding-left: 5px;
+	padding-top: 1px;
+	z-index: 2;
+	position: absolute;	
+	text-align: left;
+	vertical-align: top;	
+}
+
+.Thumb {
+	z-index: 1;
+	position: absolute;		
+}
+
+.CalendarBlank {
+	padding: 0px;
+} 
+
+.CalendarBlank img {
+	border: 0px;
+}
+
+.caption {
+	font-weight: bold;
+}
+
+.TypePad {
+	font: 13px 'Trebuchet MS', Helvetica, sans-serif;
+	color: #333333;
+	margin: 20px;
+	padding: 4px;
+	width: 90%;
+	border: 1px dotted #B1C9D5;
+	text-align: center;
+	width: 650px;
+}
+
+.Buy {
+	margin: 0px;
+}
+
+.But {
+	font-size: 11px;
+	color: #666;
+	margin: 0px;
+	padding-bottom: 5px;
+}
+
+.TypePad, .TypePadNarrow {
+	display: none;
+}
+
+.TypePad img {
+	margin-right: 5px;
+	border: none;
+}
+
+.TypePad a:link { font-weight: bold; color: #ACB560; text-decoration: none; }
+.TypePad a:visited { font-weight: bold; color: #ACB560; text-decoration: none;  }
+.TypePad a:hover { font-weight: bold; color: #ACB560; background: #fff; text-decoration: underline;  }
+.TypePad a:active { font-weight: bold; color: #61889B; text-decoration: underline;  }
+
+.TypePadNarrow {
+	font: 13px 'Trebuchet MS', Helvetica, sans-serif;
+	color: #333333;
+	padding: 4px 4px 8px;
+	width: 100%;
+	border: 1px dotted #B1C9D5;
+	text-align: left;
+}
+
+.TypePadNarrow img {
+	border: none;
+	margin-top: 5px;
+}
+
+.TypePadNarrow a:link { font-weight: bold; color: #ACB560; text-decoration: none; }
+.TypePadNarrow a:visited { font-weight: bold; color: #ACB560; text-decoration: none; }
+.TypePadNarrow a:hover { font-weight: bold; color: #ACB560; background: #fff; text-decoration: underline;}
+.TypePadNarrow a:active { font-weight: bold; color: #61889B; text-decoration: underline; }
+
+
+.paginator { font: 11px Arial, Helvetica, sans-serif; border: dotted 1px #e2e2e2; border-left: 0; border-right: 0; padding-top: 10px; padding-bottom: 10px; margin: 0px; }
+.paginator a, .pageList .this-page {padding: 2px 6px; border: solid 1px #ddd; background: #fff; text-decoration: none;}
+.paginator .break {padding: 2px 6px; border: none; background: #fff; text-decoration: none;}
+.paginator .end {padding: 2px 6px; border: solid 2px #ddd; background: #fff;}
+.paginator .this-page {padding: 2px 6px; border-color: #999; font-weight: bold; background: #fff;}
+.paginator a:hover {color: #fff; background: #0063DC; border-color: #036; text-decoration: none;}
+.paginator .ranking {display: block; margin-top: 0.5em; font-weight: bold;}
+.paginator .ranking a {padding: 0; border: 0; background: transparent;}
+.paginator .ranking a:hover {text-decoration: underline; color: #f60; background: transparent;}
